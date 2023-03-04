@@ -1,0 +1,37 @@
+.navbar-brand {
+    padding-top: 7px !important;
+}
+
+.brand-container {
+    width: max-content;
+    margin-right: 15px;
+}
+
+.logo {
+    padding-bottom: 2px;
+}
+
+.sm-icons {
+    flex-direction: row !important;
+}
+
+.masthead {
+    height: 70vh;
+    min-height: 500px;
+    background-image: url(src/img/header_bannerjpg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .sm-icons .nav-item {
+      padding-right: 1em;
+    }
+
+    .masthead {
+        width: 100% !important;
+        height: 20vh !important;
+        min-height: 60px !important;
+    }
+}
