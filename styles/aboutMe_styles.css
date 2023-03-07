@@ -1,0 +1,66 @@
+.aboutMe_container {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.aboutMe_picture_container {
+    width: 25%;
+    padding: 20px;
+    float: left;
+}
+
+.aboutMe_picture > img {
+    width: 250px;
+    border-radius: 150px;
+}
+
+.aboutMe_information_container {
+    width: 75%;
+    padding: 20px;
+    float: left;
+}
+
+.aboutMe_title, .aboutMe_information {
+    margin-left: 15%;
+    width: 80%;
+}
+
+.aboutMe_information > p {
+    margin-bottom: 7px;
+}
+
+.aboutMe_picture {
+    padding-left: 10%;
+}
+
+@media only screen and (max-width: 960px) {
+    .aboutMe_container {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+    
+    .aboutMe_picture_container {
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        float: none;
+    }
+    
+    .aboutMe_picture > img {
+        width: 150px;
+    }
+    
+    .aboutMe_information_container {
+        width: 100%;
+        padding: 20px 0px;
+    }
+    
+    .aboutMe_title, .aboutMe_information {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .aboutMe_picture {
+        padding-left: 0;
+    }
+}

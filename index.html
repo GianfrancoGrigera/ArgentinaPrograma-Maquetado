@@ -7,12 +7,20 @@
       
       <title>Gianfranco Grigera - Portfolio</title>
       <link rel="icon" href="src/img/repository.ico">
-      <link rel="stylesheet" href="style.css">
       <script src="script.js"></script>
+
+      <!-- Styles files -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="styles/aboutMe_styles.css">
       
       <!-- Bootstrap references -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+      <!-- Insert 'Roboto' typhography -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary-subtle" data-bs-theme="dark">
@@ -30,7 +38,7 @@
           <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item">
               <!-- Add "active" to class for remark word -->
-              <a class="nav-link" href="#">Sobre mí</a>
+              <a class="nav-link" href="#aboutMe">Sobre mí</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Experiencia</a>
@@ -92,5 +100,26 @@
         </div>
       </div>
     </header>
+
+    <section id="aboutMe">
+      <div class="aboutMe_container">
+        <div class="aboutMe_picture_container">
+          <div class="aboutMe_picture">
+            <img src="src/img/profile.png" alt="Imagen personal">
+          </div>
+        </div>
+        <div class="aboutMe_information_container">
+          <div class="aboutMe_title"><h2>Sobre Mí</h2></div>
+          <div class="aboutMe_information">
+            <p>Mi nombre es Gianfranco Grigera y soy Desarrollador Full Stack.</p>
+            <p>Desde muy chico tengo intereses por la programación y siempre soñe en convertirme en un desarrollado.</p>
+            <p>Me considero una persona que puede adaptarse fácilmente al trabajo en equipo, así como también podría hacerlo individualmente.</p>
+            <p>Soy capaz de aprender rápidamente y tengo mucha predisposición y perseverancia a la hora de investigar soluciones o incorporar nuevos conocimientos por cuenta propia.</p>
+            <p>Además, a la hora de resolver problemas, puedo ser una persona calma y pensativa para lograr solucionarlo de la forma más eficaz y eficiente posible.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
   </body>
 </html>
