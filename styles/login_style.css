@@ -1,0 +1,54 @@
+body {
+    background-color: #1b1768 !important;
+}
+
+.login_container {
+    color: white;
+    width: 60%;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.login_picture img {
+    width: 20%;
+}
+
+.message_info {
+    font-size: 16px;
+}
+
+.form_container {
+    margin: 0px auto;
+    width: 40%;
+}
+
+.form_container form {
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 960px) {
+    .login_container {
+        width: 85%;
+        margin-top: 50px;
+    }
+    
+    .login_picture img {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    
+    .message_info {
+        font-size: 16px;
+    }
+    
+    .form_container {
+        width: 80%;
+    }
+    
+    .form_container form {
+        margin-top: 40px;
+    }
+}
