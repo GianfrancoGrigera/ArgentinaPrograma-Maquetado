@@ -23,6 +23,17 @@
     color: white;
 }
 
+section {
+    background-color: #1b1768;
+    padding: 50px 15%;
+    color: white;
+}
+
+hr {
+    border: 2px solid white !important;
+    border-radius: 5px !important;
+}
+
 
 @media only screen and (max-width: 960px) {
     .sm-icons .nav-item {
@@ -33,5 +44,9 @@
         width: 100% !important;
         height: 20vh !important;
         min-height: 60px !important;
+    }
+
+    section {
+        padding: 20px 40px;
     }
 }
