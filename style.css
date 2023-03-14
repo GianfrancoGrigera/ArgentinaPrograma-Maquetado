@@ -25,8 +25,11 @@
 
 section {
     background-color: #1b1768;
-    padding: 50px 15%;
     color: white;
+    padding-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5px;
 }
 
 hr {

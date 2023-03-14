@@ -1,6 +1,16 @@
+.aboutMe_line{
+    border-left: thick solid #fff;
+    height: 5%;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+
 .aboutMe_container {
     display: inline-block;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .aboutMe_picture_container {
@@ -20,7 +30,7 @@
     float: left;
 }
 
-.aboutMe_title, .aboutMe_information {
+.aboutMe_information {
     margin-left: 15%;
     width: 80%;
 }
@@ -47,7 +57,7 @@
     }
     
     .aboutMe_picture > img {
-        width: 150px;
+        width: 200px;
     }
     
     .aboutMe_information_container {
@@ -55,7 +65,7 @@
         padding: 20px 0px;
     }
     
-    .aboutMe_title, .aboutMe_information {
+    .aboutMe_information {
         margin-left: 0;
         width: 100%;
     }
