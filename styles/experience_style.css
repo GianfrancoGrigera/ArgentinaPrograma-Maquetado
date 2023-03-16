@@ -35,6 +35,10 @@
 }
 
 @media only screen and (max-width: 960px) {
+    .experience_container {
+        margin-top: 0px !important;
+    }
+    
     .experiences_list_container {
         grid-template-columns: auto !important;
     }

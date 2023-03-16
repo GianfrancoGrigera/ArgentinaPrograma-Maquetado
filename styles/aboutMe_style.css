@@ -47,6 +47,7 @@
     .aboutMe_container {
         display: inline-block;
         margin-bottom: 0px;
+        margin-top: 10px !important;
     }
     
     .aboutMe_picture_container {
