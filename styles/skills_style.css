@@ -1,0 +1,75 @@
+.skills_container {
+    margin-top: 10px;
+}
+
+.skills_line{
+    border-left: thick solid #fff;
+    height: 5%;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+.skills_list_container {
+    padding-top: 20px;
+}
+
+.technical_skills_container, .personal_skills_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.skill_container {
+    text-align: center;
+    padding: 10px;
+}
+
+.skill_chart {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills_separator {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 2px;
+    border-radius: 15px;
+    background-color: #323055;
+}
+
+@media only screen and (max-width: 960px) {
+    .skills_container {
+        margin-top: 0px !important;
+    }
+
+    .skill_title > h5 {
+        font-size: 14px !important;
+    }
+
+    .technical_skills_container {
+        grid-template-columns: auto auto auto !important;
+        padding: 0px !important;
+    }
+    
+    .personal_skills_container {
+        grid-template-columns: auto auto auto !important;
+        padding: 0px !important;
+    }
+
+    .skill_container {
+        padding: 5px;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .skill_chart {
+        padding: 5px;
+        width: 100px !important;
+        align-self: center;
+        justify-self: center;
+    }
+}

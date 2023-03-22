@@ -14,6 +14,7 @@
       <link rel="stylesheet" href="styles/aboutMe_style.css">
       <link rel="stylesheet" href="styles/experience_style.css">
       <link rel="stylesheet" href="styles/education_style.css">
+      <link rel="stylesheet" href="styles/skills_style.css">
       
       <!-- Bootstrap references -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -23,8 +24,12 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+      <!-- ChartJS reference -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <script src="skills_generator.js"></script>
   </head>
-  <body>
+  <body onload="loadCharts()">
     <nav class="navbar navbar-expand-lg bg-primary-subtle" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand">
@@ -49,7 +54,7 @@
               <a class="nav-link" href="#education">Educación</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Proyectos</a>
@@ -216,12 +221,222 @@
           <div class="education_information_container">
             <div class="education_header_information">
               <img src="src/img/institutions/UAI_logo.png" alt="UAI - Logo" class="university_logo">
-              <h4>Universia Abierta Interamericana</h4>
+              <h4>Universidad Abierta Interamericana</h4>
               <h6>Universitario | 2023-Actualidad | Rosario, Santa Fe</h6>
             </div>
             <div class="education_data_detail">
               <h5>Ingeniería en Sistemas Informáticos</h5>
               <div class="education_study_detail">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+
+    <section id="skills">
+      <div class="skills_container">
+        <div class="skills_line">
+          <h2>Habilidades</h2>
+        </div>
+        <div class="skills_list_container">
+          <div class="technical_skills_container">
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>HTML</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="htmlChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Javascript</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="javascriptChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>CSS</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="cssChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Angular</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="angularChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Typescript</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="typescriptChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Ionic</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="ionicChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Bootstrap</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="bootstrapChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>PHP</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="phpChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>C#</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="cSharpChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>SQL</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="sqlChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>.NET</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="netChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Unity</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="unityChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>MongoDB</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="mongoDBChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Azure Web Services</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="azureWSChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Git</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="gitChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills_separator"></div>
+          
+          <div class="personal_skills_container">
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Colaboración</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="collaborationChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Comunicación</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="communicationChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Innovación</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="innovationChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Flexibilidad</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="flexibilityChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Organización</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="organizationChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Liderazgo</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="leadershipChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Resolución de problemas</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="problemResolutionChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Trabajo en equipo</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="teamworkChart"></canvas>
+              </div>
+            </div>
+            <div class="skill_container">
+              <div class="skill_title">
+                <h5>Responsabilidad</h5>
+              </div>
+              <div class="skill_chart">
+                <canvas id="responsibility"></canvas>
               </div>
             </div>
           </div>
