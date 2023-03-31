@@ -46,8 +46,4 @@
     .project_picture > img {
         width: 100px;
     }
-
-    .project_title {
-        font-size: 16px !important;
-    }
 }

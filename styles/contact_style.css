@@ -1,0 +1,35 @@
+.contact_container {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.contact_line{
+    border-left: thick solid #fff;
+    height: 5%;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+.contact_form_container {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form_contact {
+    margin: 0px auto;
+    width: 30%;
+}
+
+.form_contact form {
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 960px) {    
+    .form_contact {
+        width: 90%;
+    }
+    
+    .form_contact form {
+        margin-top: 40px;
+    }
+}
